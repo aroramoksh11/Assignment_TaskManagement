@@ -4,8 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Add glow effect */
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+        }
+    </style>
 </head>
-<body>
-    <div id="root"></div>
+<body class="bg-gradient-to-r from-blue-300 to-pink-400 font-sans animate-fadeIn">
+
+    <div class="min-h-screen flex flex-col justify-between">
+
+        <!-- Header with background animation -->
+        <header class="bg-white shadow-lg py-12 mb-8 rounded-b-xl transform hover:scale-105 transition-all duration-500 ease-in-out">
+            <h1 class="text-5xl font-bold text-center text-gray-800 tracking-tight hover:text-pink-600 transition-all transform hover:scale-110">
+                Task Manager
+            </h1>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex justify-center px-4 md:px-8">
+            <div id="root" class="bg-white rounded-xl shadow-xl p-10 w-full md:max-w-4xl transform hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out">
+
+                <!-- Add Task Button with animation -->
+                <div class="mb-6 text-center">
+                    <button class="bg-gradient-to-r from-blue-500 to-pink-500 text-white py-3 px-6 rounded-full text-lg font-semibold shadow-lg hover:from-blue-600 hover:to-pink-600 hover:shadow-2xl transition-all transform hover:scale-105">
+                        Add Task
+                    </button>
+                </div>
+
+                <!-- Task List with animations -->
+                <div class="space-y-6">
+                    <div class="task-item p-6 bg-gradient-to-r from-blue-100 to-blue-200 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <h2 class="text-2xl font-semibold text-gray-800 tracking-wide hover:text-pink-600 transition-all duration-300">
+                            Task Title #1
+                        </h2>
+                        <p class="text-gray-600 mt-2 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                    </div>
+
+                    <div class="task-item p-6 bg-gradient-to-r from-purple-100 to-purple-200 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <h2 class="text-2xl font-semibold text-gray-800 tracking-wide hover:text-pink-600 transition-all duration-300">
+                            Task Title #2
+                        </h2>
+                        <p class="text-gray-600 mt-2 text-lg">Suspendisse potenti. Integer vulputate, eros vel euismod auctor, sapien turpis.</p>
+                    </div>
+
+                    <div class="task-item p-6 bg-gradient-to-r from-green-100 to-green-200 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
+                        <h2 class="text-2xl font-semibold text-gray-800 tracking-wide hover:text-pink-600 transition-all duration-300">
+                            Task Title #3
+                        </h2>
+                        <p class="text-gray-600 mt-2 text-lg">Vivamus et ex ut libero sodales consequat ac vitae purus. Proin nec dui at ante aliquam.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer with glow effect -->
+        <footer class="bg-gray-800 text-white text-center py-6 mt-8 animate-glow">
+            <p class="text-sm">&copy; 2025 Task Manager. All Rights Reserved.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
