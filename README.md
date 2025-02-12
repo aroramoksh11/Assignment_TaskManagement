@@ -1,4 +1,4 @@
-# 🚀 Full-Stack Task Management App
+# Full-Stack Task Management App
 
 ![GitHub Repo](https://img.shields.io/badge/Project-FullStack--TaskApp-blue?style=for-the-badge)
 
