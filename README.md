@@ -35,6 +35,7 @@ Assignment--main/
 │   ├── tasks.db          # SQLite database file
 │   ├── requirements.txt  # Dependencies for backend
 │── frontend/             # Frontend (React)
+│   ├── screenshots/      #Project Screenshots # FastAPI running at 127.0.0.1:8000 ├── frontend.png # React running at localhost:3000 
 │   ├── src/
 │   │   ├── App.js        # Main React app component
 │   │   ├── index.js      # React entry point
@@ -48,6 +49,12 @@ Assignment--main/
 ```
 
 ---
+## 📸 Screenshots  
+### 🎨 **Frontend (React Running at http://localhost:3000)**  
+![Frontend Screenshot](https://github.com/aroramoksh11/Assignment-/blob/main/frontend/screenshots/Frontend.png)  
+
+### 🖥️ **Backend (FastAPI Running at 127.0.0.1:8000)**  
+![Backend Screenshot](https://github.com/aroramoksh11/Assignment-/blob/main/frontend/screenshots/Backend.png)  
 
 ## 🛠️ Prerequisites
 Before running this project, ensure you have the following installed:
@@ -132,3 +139,4 @@ This project is licensed under the **MIT License**.
 - **[Moksh Arora]** - Developer & Maintainer
 
 🙌 Feel free to fork, contribute, or reach out for any questions!
+# Assignment_TaskManagement
