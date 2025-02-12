@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-# Database URL (Use PostgreSQL by replacing this with "postgresql://user:password@localhost/dbname")
+# Database URL
 DATABASE_URL = "sqlite:///./tasks.db"
 
 # Create engine and session
