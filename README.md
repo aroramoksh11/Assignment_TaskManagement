@@ -120,7 +120,6 @@ npm start
 | POST   | /tasks      | Create a new task  |
 | PUT    | /tasks/{id} | Update a task      |
 | DELETE | /tasks/{id} | Delete a task      |
-
 ---
 
 ## ⚠️ Notes
