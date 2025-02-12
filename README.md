@@ -129,14 +129,7 @@ npm start
 - The project follows **MVC architecture** for better maintainability.
 
 ---
-
-## 📜 License
-This project is licensed under the **MIT License**.
-
----
-
 ## 👨‍💻 Contributors
 - **[Moksh Arora]** - Developer & Maintainer
 
 🙌 Feel free to fork, contribute, or reach out for any questions!
-# Assignment_TaskManagement
